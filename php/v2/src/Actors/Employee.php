@@ -4,7 +4,7 @@ namespace NW\WebService\Actors;
 
 use NW\WebService\Exceptions\EmployeeNotFoundException;
 
-class Employee extends Actor
+final class Employee extends Actor
 {
     public function __construct(int $id, string $name, protected string $email)
     {

@@ -20,8 +20,10 @@ class CheckInputDataHelper
                 throw new IncorrectInputDataException(sprintf('Not found param: %s', $field));
             }
 
-            if (($type === 'int' and is_numeric($data[$field])) or ($type === 'string' and is_string($data[$field]))) {
+            if ($type === 'int' and is_numeric($data[$field])) {
                 $filteredData[$field] = (int) $data[$field];
+            } elseif ($type === 'string' and is_string($data[$field])) {
+                $filteredData[$field] = $data[$field];
             } else {
                 throw new IncorrectInputDataException(sprintf('Incorrect param %s: %s', $field, $data[$field]));
             }

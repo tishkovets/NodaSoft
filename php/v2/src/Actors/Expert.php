@@ -4,7 +4,7 @@ namespace NW\WebService\Actors;
 
 use NW\WebService\Exceptions\ExpertNotFoundException;
 
-class Expert extends Actor
+final class Expert extends Actor
 {
     /**
      * @return string

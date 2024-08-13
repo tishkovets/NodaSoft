@@ -4,7 +4,7 @@ namespace NW\WebService\Actors;
 
 use NW\WebService\Exceptions\CreatorNotFoundException;
 
-class Creator extends Actor
+final class Creator extends Actor
 {
     /**
      * @return string

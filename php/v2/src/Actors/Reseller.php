@@ -4,7 +4,7 @@ namespace NW\WebService\Actors;
 
 use NW\WebService\Exceptions\ResellerNotFoundException;
 
-class Reseller extends Actor
+final class Reseller extends Actor
 {
 
     /**
